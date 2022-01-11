@@ -50,7 +50,7 @@ def load_file():
     readingsdf['Timestamp'] = pd.to_datetime(readingsdf['Timestamp'].str[0:23])
     
     # Add timezone GMT then convert to Europe/Zurich timezone in order to account for daylight savings time (Winterzeit/Sommerzeit)
-    # TODO:  This should correctly be done by first querying the timezone of the installation using another API endpoint
+    # TODO #2:  This should correctly be done by first querying the timezone of the installation using another API endpoint
 
     # This is to correct for the fact that Zaptec reading time series seem to omit Winterzeit/Sommerzeit
     readingsdf['Timestamp'] = readingsdf['Timestamp'].dt.tz_localize('Etc/GMT')
@@ -58,6 +58,7 @@ def load_file():
 
     # Sort by DeviceID and kWh ascending
     # note:  cannot sort by timestamp because then kWh is not monotonically ascending (maybe Zaptec bug?)
+    # TODO: #3  investigate whether this is by design or whether it's a bug
     readingsdf.sort_values(by=['DeviceID','kWh'],inplace=True)
     
     # Create convenience rows for later calculation and grouping
