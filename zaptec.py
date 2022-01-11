@@ -7,7 +7,7 @@ from pandas.io import html
 import csv
 
 """
-Python script that calculates Hochtarif and Niedertarif kWh consumed by Zaptec charging devices.
+Python script that calculates kWh consumed by Zaptec charging devices during Hochtarif and Niedertarif (low and high tariffs) times.
 
 Takes as input a file called 'response.json' contained in the same directory as the script.
 response.json is received from Zaptec "chargehistory" API endpoint:
