@@ -6,7 +6,7 @@
 
 ### Question 2:  Does the data suggest any value-added services that EV Charging Point Operators (CPO) might consider offering in the future?
 
-### Question 3:  What charging pattern should EV owners adopt in order to extend the lifetime of the vehicle's battery?
+### Question 3:  What charging pattern should EV owners adopt in order to extend the lifetime of their vehicle's battery?
 
 
 
@@ -16,13 +16,13 @@
 business insights:
 - projected power grid load as number of EVs grows over time?
 - 
-- how are the charging session start times distributed across the different EVs?  What conclusions can we draw from this?
+- how are the charging session start and end times distributed across the different EVs?  What conclusions can we draw from this?
 
 - can we predict the electrical power demand for EV charging at the site for a given day of the week and hour in the day, based on historical EV charge patterns?
 
-- during the period that a given EV is cable-connected to the charger (aka a "session"), how much power is actually drawn during the low- and high-tariff time windows?  What's the potential cost saving for the EV owner that could have been realized simply by making the charging periods (the time periods that the EV actually draws power from the charger) smarter?
+- during the period that a given EV is cable-connected to the charger (aka a "session"), how much power is actually drawn during the low- and high-tariff time windows?  What's the potential cost saving for the EV owner that could have been realized simply by making the charging periods (the time periods that the EV actually draws power from the charger) smarter?  Do price incentives work?
 
-- When session stops with "externally ended", that's probably also the time that the vehicle leaves the garage.  what can we do with this info?  eg entry and exit times into and from the garage corresponding to cable-connected cable-not-connected.
+- When session stops with "externally ended", that is when the charging cable was disconnedted from the vehicle, and this is probably also the time that the vehicle leaves the garage.  what can we do with this info?  eg entry and exit times into and from the garage corresponding to cable-connected cable-disconnected.
 
 - what can we infer from the energy that is charged during a session and the corresponding end-time of the previous session and the start time of the current session?  For example, how many kWh the vehcile charges may be an indication of how many kilometers were driven between charging session?  
 
